@@ -4,14 +4,17 @@ int main() {
 
    char niz[20];
    int n, len = -1;
+   
    printf("Upisite niz > ");
    fgets(niz, 20, stdin);
+   
    printf("Upisite poziciju > ");
    scanf("%d", &n);
    n -= 1;
-   while (niz[++len] != '\0' && niz[len] != '\n')
-      ;
+   
+   while (niz[++len] != '\0' && niz[len] != '\n');
    niz[len] = '\0';
+   
    if (n >= len)
       printf("Neispravna pozicija");
    else {

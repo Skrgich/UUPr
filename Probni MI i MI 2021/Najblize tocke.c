@@ -14,11 +14,13 @@ int main() {
 
    printf("Upisati n > ");
    scanf("%d", &n);
+   
    struct Tocka tocke[n];
    for (int i = 0; i < n; i++) {
+      
       printf("%3d. tocka > ", i + 1);
       scanf("%f %f", &tocke[i].x, &tocke[i].y);
-      tocke[i].r = 0.;
+      
       tocke[i].r = sqrt(pow(tocke[i].x, 2) + pow(tocke[i].y, 2));
       if (tocke[i].r < min_dist)
          min_dist = tocke[i].r;

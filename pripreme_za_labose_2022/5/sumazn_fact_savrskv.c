@@ -21,13 +21,24 @@ int zbroj_znamenaka(int n) {
 int main() {
 
    int n;
-   printf("Unesite prirodni broj > ");
+   printf("Upisite prirodni broj > ");
    scanf("%d", &n);
    if (savrsen_kvadrat(zbroj_znamenaka(factorial(n))) == 1) {
-      printf("Suma znamenaka od %d! je savrsen kvadrat.", n);
+      printf("\nSuma znamenaka od %d! je savrsen kvadrat.", n);
    } else {
-      printf("Suma znamenaka od %d! nije savrsen kvadrat.", n);
+      printf("\nSuma znamenaka od %d! nije savrsen kvadrat.", n);
    }
 
    return 0;
 }
+
+
+
+
+
+
+
+
+
+
+

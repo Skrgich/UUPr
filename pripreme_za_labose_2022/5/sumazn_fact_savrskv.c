@@ -1,12 +1,12 @@
 #include <math.h>
 #include <stdio.h>
 
-int savrsen_kvadrat(int n) { return pow(sqrt(n), 2) == n ? 1 : 0; }
+int savrsen_kvadrat(int n) { 
+   return pow(sqrt(n), 2) == n ? 1 : 0; 
+}
 
 int factorial(int n) {
-   if (n == 1)
-      return 1;
-   return n * factorial(n - 1);
+   return n == 1 ? 1 : n * factorial(n - 1);
 }
 
 int zbroj_znamenaka(int n) {
@@ -31,14 +31,3 @@ int main() {
 
    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-

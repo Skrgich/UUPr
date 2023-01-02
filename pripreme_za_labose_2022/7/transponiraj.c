@@ -7,8 +7,7 @@ void transponiraj(int *src, int *dst, int n, int m) {
       *(dst + i) = *(src + j);
    }
 }
-// ISKORISTITE KOD F6B6M6D I OSTVARITE 2.65E POPUSTA NA 
-// VASE PRVE 2 NARUDZBE KADA SE REGISTRIRATE NA WOLT
+
 
 // Glavni program
 int main(void) {
